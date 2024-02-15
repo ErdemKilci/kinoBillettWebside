@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="kinoBillett.js"></script>
+</head>
+<body>
+
+    <h1>Bestilling av kinobilletter</h1>
+
+    <form>
+
+        <label for="film">Film:</label>
+        <select name="films" id="film">
+        <option value="Monster">Monster</option>
+        <option value="Shrek">Shrek</option>
+        <option value="Cars">Cars</option>
+        </select><br>
+
+        <label for="antall">Antall billetter:</label>
+        <input type="number" id="antall" required><br>
+
+        <label for="fornavn">Fornavn:</label>
+        <input type="text" id="fornavn" required><br>
+
+        <label for="etternavn">Etternavn:</label>
+        <input type="text" id="etternavn" required><br>
+
+        <label for="telefonNummer">Telefonnummer:</label>
+        <input type="tel" id="telefonNummer" required><br>
+
+        <label for="epost">E-postadresse:</label>
+        <input type="email" id="epost" required><br>
+
+        <button type="button" onclick="buyTicket()">Kjøp billett</button>
+
+    </form>
+    <h2 id="ticketsAll">Alle Billetter</h2>
+
+    <button type="button" onclick="removeTickets()">Slett alle billettene</button>
+
+
+</body>
+</html>
